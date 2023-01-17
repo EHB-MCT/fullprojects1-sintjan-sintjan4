@@ -1,0 +1,89 @@
+body {
+	background-color: #303134;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 1200px;
+	float: none;
+	margin: 0 auto;
+}
+
+/*COLOR*/
+
+.Title h1 {
+	padding: 20px 30px;
+	border-radius: 15px;
+	background-color: #394b58;
+}
+
+.PrimaryColor {
+	padding: 75px 75px;
+	background-color: white;
+	width: 75px;
+	border-radius: 15px;
+	color: black;
+}
+
+.SecundaryColors {
+	display: flex;
+}
+
+.SecundaryColor {
+	padding: 75px 75px;
+	background-color: white;
+	width: 75px;
+	border-radius: 15px;
+	color: black;
+	margin-right: 25px;
+}
+
+.SecundaryColor2 {
+	padding: 75px 75px;
+	background-color: white;
+	width: 75px;
+	border-radius: 15px;
+	color: black;
+}
+
+p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*COLOR*/
+
+.Headers {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Headers-Left {
+	margin-right: 130px;
+}
+
+.Headers-Left h1 {
+	width: 180px;
+}
+
+.Headers-Right h1 {
+	font-size: 46px;
+}
+
+.Headers-Right h2 {
+	font-size: 40px;
+}
+
+.Headers-Right h3 {
+	font-size: 34px;
+}
+
+.Headers-Right h4 {
+	font-size: 28px;
+}
+
+.Headers-Right h5 {
+	font-size: 22px;
+}
+
+.Headers-Right h6 {
+	font-size: 16px;
+}
