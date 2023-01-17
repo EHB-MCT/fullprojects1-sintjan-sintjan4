@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+    transition: 0.3s;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+.padding-background {
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+    /* max-width: 780px; */
+}
+.padding {
+    background-color: #fff;
+    max-width: 1000px;
+}
+
+h1 {
+    color: #46b9be;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #46b9be;
+}
+h2 {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    size: 20px;
+    color: #4d4d4d;
+    border-bottom: 2px dotted #6c6c6c;
+}
+p {
+    /* margin-left: 5px; */
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.grow {
+    flex-grow: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* navigation bar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* background-color: #9ce646; */
+    background-color: #ffffff;
+    /* height: 50px; */
+}
+.navbar img {
+    height: 50px;
+    /* border-radius: 100px; */ /* does not work */
+}
+.navbar h1 {
+    margin-left: 10px;
+    font-size: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 5px;
+    padding: 5px;
+    border: 2px solid #000000;
+    background-color: #000000;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+.navbar a:hover {
+    /* background-color: #54d6dd; */
+    background-color: #fff;
+    border: 2px solid #54d6dd;
+    color: #000;
+    border-radius: 20px;
+}
+
+/* center: to center text in an div or just text */
+.center {
+    text-align: center;
+}
+
+/* container */
+.container {
+    margin: 10px;
+    padding: 10px;
+    border-left: 3px solid #9ce646;
+    background-color: #0000001f;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    display: flex;
+}
+.container div {
+    margin-left: 10px;
+}
+.container img {
+}
+
+/* media container */
+.media-container {
+    /* background-image: url("/img/1.jpg"); */
+    width: 100%;
+    height: 400px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.media-container img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
