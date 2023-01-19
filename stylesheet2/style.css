@@ -13,12 +13,13 @@ body {
 	padding: 20px 30px;
 	border-radius: 15px;
 	background-color: #394b58;
+	margin-top: 100px;
 }
 
 .PrimaryColor {
 	padding: 75px 75px;
 	background-color: white;
-	width: 75px;
+	width: 100px;
 	border-radius: 15px;
 	color: black;
 }
@@ -30,7 +31,7 @@ body {
 .SecundaryColor {
 	padding: 75px 75px;
 	background-color: white;
-	width: 75px;
+	width: 100px;
 	border-radius: 15px;
 	color: black;
 	margin-right: 25px;
@@ -39,7 +40,7 @@ body {
 .SecundaryColor2 {
 	padding: 75px 75px;
 	background-color: white;
-	width: 75px;
+	width: 100px;
 	border-radius: 15px;
 	color: black;
 }
@@ -49,11 +50,17 @@ p {
 	font-weight: bold;
 }
 
-/*COLOR*/
+/*Headings*/
 
 .Headers {
 	display: flex;
 	justify-content: space-between;
+}
+
+.SubTitle {
+	padding: 10px 20px;
+	background-color: #5c96b9;
+	border-radius: 15px;
 }
 
 .Headers-Left {
@@ -86,4 +93,96 @@ p {
 
 .Headers-Right h6 {
 	font-size: 16px;
+}
+
+/*BUTTONS*/
+
+.Buttons {
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+.LeftButtons {
+	margin-bottom: 90px;
+}
+
+.Buttons div a {
+	padding: 20px 30px 20px 30px;
+	text-decoration: none;
+	border-radius: 15px;
+	color: white;
+	font-size: 25px;
+}
+
+.Left-Btn1 {
+	background-color: #5c96b9;
+	margin-right: 70px;
+}
+
+.Right-Btn1 {
+	background-color: #414646;
+}
+
+.Left-Btn2 {
+	background-color: #376f98;
+	margin-right: 70px;
+}
+
+.Right-Btn2 {
+	background-color: black;
+}
+
+.Left-Btn1:hover {
+	transition: 0.2s;
+	background-color: #376f98;
+}
+
+.Right-Btn1:hover {
+	transition: 0.2s;
+	background-color: black;
+}
+
+/*NAV*/
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	padding: 30px;
+	background-color: #fff;
+}
+
+.nav img {
+	width: 20%;
+}
+
+.nav ul li {
+	display: inline;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 20px;
+	color: black;
+}
+
+.nav ul li .NavButton {
+	padding: 30px;
+	background-color: #376f98;
+	border-radius: 15px;
+	color: white;
+}
+
+.nav ul li .NavButton:hover {
+	transition: 0.2s;
+	background-color: #394b58;
+}
+
+.nav ul li .Under:hover {
+	transition: 0.2s;
+	border-bottom: solid;
+}
+
+.SocialMedia img {
+	width: 5%;
 }
