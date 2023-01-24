@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="maxime.css">
-
+		<link rel="stylesheet" href="michael.css">
 	</head>
 
 	<body>
@@ -33,8 +33,45 @@
 			<h2>Explore more</h2>
 		</div>
 
-        <div class="micheal"></div>
-        <section id="ruzie">
+        <div class="micheal">
+			<div class="OnzeVisie">
+				<div>
+					<h1>Onze Visie</h1>
+				</div>
+				<div>
+					<p>
+						Sint-Jan heeft een mooie traditie in het aanbieden van kwalitatief hoogstaand onderwijs. Wij willen de leerlingen die kiezen voor Sint-Jan, elk volgens hun talenten en mogelijkheden, uitdagen tot meer. We willen hen laten verbaasd staan
+						over het feit dat hun talenten kunnen rijpen, maar eveneens dat hun talenten pas echt bloeien als ze worden ingezet ten dienste van anderen.
+					</p>
+				</div>
+			</div>
+			<h1 class="BeleefH1">Beleef Sint-Jan Berchmans met ons.</h1>
+			<div class="Beleef">
+				<div>
+					<img src="images/Labkids.png" />
+				</div>
+				<div class="Icons">
+					<div class="Icons-Vert">
+						<img src="images/Atom.png" />
+						<img class="Chemie" src="images/Scope.png" />
+						<img src="images/Layer 1.png" />
+					</div>
+				</div>
+			</div>
+			<div class="Beleef2">
+				<div>
+					<p>
+						In de verschillende wetenschappen ontwikkel je je onderzoeks- en labovaardigheden: vanuit experimenten en waarnemingen uit de omgeving ga je op zoek naar verklaringen voor verschijnselen en leid je wetten af. Je leert waarnemingen
+						kritisch verwoorden.
+					</p>
+				</div>
+				<div class="Buttondiv">
+					<a href="#" class="ButtonBeleef">Ontdek hier</a>
+				</div>
+			</div>
+		</div>
+
+		<section id="ruzie">
 			<article>
 				<aside>
 					<p>Freud dacht dat het iets anders was, maar neem het van mij aan, na meer dan drie decennia Sint-Jan
@@ -72,5 +109,23 @@
 				<button>Lees meer</button>
 			</article>
 		</section>
+		
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var header = document.getElementById("nav");
+			var navtransition = document.getElementById("navtransition")
+			console.log(navtransition)
+			var sticky = navtransition.offsetTop;
+			
+			function myFunction() {
+				console.log('offset:', sticky)
+			    if (window.pageYOffset > sticky) {
+				    header.classList.add("fixed");
+			    } else {
+				    header.classList.remove("fixed");
+			    }
+			}
+			</script>
 	</body>
 </html>
