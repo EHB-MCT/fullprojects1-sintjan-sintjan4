@@ -13,6 +13,11 @@
 	height: 500px;
 }
 
+.fixed {
+    /* position: fixed; */
+    background-color: red;
+}
+
 nav img {
 	width: 50px;
 	padding: 30px 30px;
@@ -21,11 +26,22 @@ nav img {
 nav a {
 	text-decoration: none;
 	color: white;
+    /* width: 100%; */
+    /* height: 50px; */
+    position: sticky;
+    top: 0;
+    /* background-color: aqua; */
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
+
+	width: 100%;
+    /* position: fixed; */
+    position: fixed;
+    top: 0;
+	transition-duration: 4s;
 }
 
 nav ul {
