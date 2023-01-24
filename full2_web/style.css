@@ -13,6 +13,11 @@
 	height: 500px;
 }
 
+.fixed {
+    /* position: fixed; */
+    background-color: red;
+}
+
 nav img {
 	width: 50px;
 	padding: 30px 30px;
@@ -21,11 +26,22 @@ nav img {
 nav a {
 	text-decoration: none;
 	color: white;
+    /* width: 100%; */
+    /* height: 50px; */
+    position: sticky;
+    top: 0;
+    /* background-color: aqua; */
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
+
+	width: 100%;
+    /* position: fixed; */
+    position: fixed;
+    top: 0;
+	transition-duration: 4s;
 }
 
 nav ul {
@@ -34,6 +50,10 @@ nav ul {
 nav ul li a {
 	text-decoration: none;
 	font-weight: bolder;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
 }
 
 nav ul li {
@@ -53,6 +73,25 @@ nav ul li {
 	font-weight: bolder;
 	padding: 20px;
 	font-size: large;
+}
+
+.hover .dropdown-content {
+	display: none;
+}
+
+.hover .dropdown-content ul {
+	padding: 0;
+	padding-top: 10px;
+}
+
+.hover .dropdown-content ul li {
+	display: block;
+}
+
+.hover:hover .dropdown-content {
+	display: block;
+	position: absolute;
+	display: inline-block;
 }
 
 h1{
@@ -83,4 +122,23 @@ p{
 
 img{
     width: 100%;
+}
+=======
+.hover .dropdown-content {
+	display: none;
+}
+
+.hover .dropdown-content ul {
+	padding: 0;
+	padding-top: 10px;
+}
+
+.hover .dropdown-content ul li {
+	display: block;
+}
+
+.hover:hover .dropdown-content {
+	display: block;
+	position: absolute;
+	display: inline-block;
 }

@@ -1,35 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sint-jan Berchman</title>
+        <link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="maxime.css">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Sint-jan Berchman</title>
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="./style.css" />
-	<link rel="stylesheet" href="maxime.css">
+	</head>
 
-	<!-- <script>
-      window.onscroll = function () {myFunction();};
-      var header = document.getElementById("myHeader");
-      var sticky = header.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-    </script> -->
-
-</head>
-
-<body>
-
-	<div class="container">
-		<nav>
+	<body>
+		<nav id="nav">
 			<div class="logo"><img src="images/logo_vectorieel_wit.png" /></div>
 			<div>
 				<ul>
@@ -41,55 +24,53 @@
 					<li><a href="#">Identiteit</li></a>
 				</ul>
 			</div>
-
 		</nav>
-		<h1>Sint-jan Berchman</h1>
-	</div>
-	<div class="explore">
-		<h2>Explore more</h2>
-	</div>
+		<div class="container" style="display: flex; align-items: center;">
+            <h1>Sint-jan Berchman</h1>
+		</div>
+		<div hidden id="navtransition"></div>
+		<div class="explore">
+			<h2>Explore more</h2>
+		</div>
 
-	<div class="micheal"></div>
-
-
-	<section id="ruzie">
-		<article>
-			<aside>
-				<p>Freud dacht dat het iets anders was, maar neem het van mij aan, na meer dan drie decennia Sint-Jan
-					weet ik: dit is de vraag die de mens, en in het bijzonder de bewegende mens, drijft.</p>
-			</aside>
-			<div></div>
-			<div></div>
-			<div></div>
-			<img src="images/kinderen_ruzie.png">
-		</article>
-	</section>
-	<section id="school-leven">
-		<h2>School Leven</h2>
-		<article>
-			<div>
-				<p>Wij willen jongeren begeleiden naar volwassenheid en vinden het daarbij belangrijk dat ze in staat
-					zijn
-					om te reflecteren over hun eigen leven en opgedane ervaringen. Het sociaal project kan daarbij een
-					grote
-					meerwaarde
-					vormen.</p>
-			</div>
-			<img src="images/leerlingen.png" alt="Sint-jan Berchman Leerlingen">
-			<img src="images/vorm1.png">
-			<img src="images/zorg_dragen.png" alt="Zorg dragen voor elkaar en de wereld">
-			<img src="images/vorm2.png">
-			<div>
-				<p>De leerlingenraad is de stem van de leerlingen. Iedereen die ideeën en voorstellen heeft, is daarmee
-					welkom bij ons.</p>
-			</div>
-			<div>
-				<p>Jaarthema 2022 - 2023: DANK U VOOR ALLES! 'Dank u voor alles' is ons nieuwe jaarthema. Dank u? Voor
-					ALLES?? Nadat onze zekerheden en gewoontes de voorbije jaren flink dooreengeschud.</p>
-			</div>
-			<button>Lees meer</button>
-		</article>
-	</section>
-</body>
-
+        <div class="micheal"></div>
+        <section id="ruzie">
+			<article>
+				<aside>
+					<p>Freud dacht dat het iets anders was, maar neem het van mij aan, na meer dan drie decennia Sint-Jan
+						weet ik: dit is de vraag die de mens, en in het bijzonder de bewegende mens, drijft.</p>
+				</aside>
+				<div></div>
+				<div></div>
+				<div></div>
+				<img src="images/kinderen_ruzie.png">
+			</article>
+		</section>
+		<section id="school-leven">
+			<h2>School Leven</h2>
+			<article>
+				<div>
+					<p>Wij willen jongeren begeleiden naar volwassenheid en vinden het daarbij belangrijk dat ze in staat
+						zijn
+						om te reflecteren over hun eigen leven en opgedane ervaringen. Het sociaal project kan daarbij een
+						grote
+						meerwaarde
+						vormen.</p>
+				</div>
+				<img src="images/leerlingen.png" alt="Sint-jan Berchman Leerlingen">
+				<img src="images/vorm1.png">
+				<img src="images/zorg_dragen.png" alt="Zorg dragen voor elkaar en de wereld">
+				<img src="images/vorm2.png">
+				<div>
+					<p>De leerlingenraad is de stem van de leerlingen. Iedereen die ideeën en voorstellen heeft, is daarmee
+						welkom bij ons.</p>
+				</div>
+				<div>
+					<p>Jaarthema 2022 - 2023: DANK U VOOR ALLES! 'Dank u voor alles' is ons nieuwe jaarthema. Dank u? Voor
+						ALLES?? Nadat onze zekerheden en gewoontes de voorbije jaren flink dooreengeschud.</p>
+				</div>
+				<button>Lees meer</button>
+			</article>
+		</section>
+	</body>
 </html>
