@@ -36,6 +36,10 @@ nav ul li a {
 	font-weight: bolder;
 }
 
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
 nav ul li {
 	display: inline;
 	margin-left: 20px;
@@ -53,4 +57,23 @@ nav ul li {
 	font-weight: bolder;
 	padding: 20px;
 	font-size: large;
+}
+
+.hover .dropdown-content {
+	display: none;
+}
+
+.hover .dropdown-content ul {
+	padding: 0;
+	padding-top: 10px;
+}
+
+.hover .dropdown-content ul li {
+	display: block;
+}
+
+.hover:hover .dropdown-content {
+	display: block;
+	position: absolute;
+	display: inline-block;
 }
