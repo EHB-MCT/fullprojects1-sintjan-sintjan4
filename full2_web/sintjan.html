@@ -7,45 +7,117 @@
 		<title>Sint-jan Berchman</title>
         <link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="./style.css" />
-		 <!-- <script>
-      window.onscroll = function () {myFunction();};
-      var header = document.getElementById("myHeader");
-      var sticky = header.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-    </script> -->
 	</head>
 
 	<body>
-		
-			<div class="container">
-				<nav>
-					<div class="logo"><img src="images/logo_vectorieel_wit.png" /></div>
-                    <div>
-                        <ul>
-                            <li><a href="#">Home</li></a>
-                            <li><a href="#">Info</li></a>
-                            <li><a href="#">Contact</li></a>
-                            <li><a href="#">Visie</li></a>
-                            <li><a href="#">Projectie</li></a>
-                            <li><a href="#">Identiteit</li></a>
-                        </ul>
-                    </div>
-					
-				</nav>7
-                <h1>Sint-jan Berchman</h1>
+		<nav id="nav">
+			<div class="logo"><img src="images/logo_vectorieel_wit.png" /></div>
+			<div>
+				<ul>
+					<li><a href="#">Home</li></a>
+					<li><a href="#">Info</li></a>
+					<li><a href="#">Contact</li></a>
+					<li><a href="#">Visie</li></a>
+					<li><a href="#">Projectie</li></a>
+					<li><a href="#">Identiteit</li></a>
+				</ul>
 			</div>
+		</nav>
+		<div class="container" style="display: flex; align-items: center;">
+            <h1>Sint-jan Berchman</h1>
+		</div>
+		<div hidden id="navtransition"></div>
 		<div class="explore"><h2>Explore more</h2></div>
 
         <div class="micheal"></div>
 
 
         <div class="maxim"></div>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<h1>test</h1>
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var header = document.getElementById("nav");
+			var navtransition = document.getElementById("navtransition")
+			var sticky = navtransition.offsetTop;
+			
+			function myFunction() {
+				console.log('offset:', sticky)
+			    if (window.pageYOffset > sticky) {
+				    header.classList.add("fixed");
+			    } else {
+				    header.classList.remove("fixed");
+			    }
+			}
+			</script>
 	</body>
 </html>
