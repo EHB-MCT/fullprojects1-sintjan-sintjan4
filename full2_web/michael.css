@@ -1,0 +1,98 @@
+/*Michael*/
+
+.BeleefH1 {
+	width: 90%;
+	margin: auto;
+	font-size: 32px;
+	font-weight: bold;
+	font-family: "Source Serif Pro", serif;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.Beleef {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 25px;
+}
+
+.Beleef div img {
+	width: 100%;
+}
+
+.Icons-Vert {
+	display: flex;
+	flex-direction: column;
+}
+
+.Icons .Icons-Vert img {
+	width: 70%;
+	margin-bottom: 60px;
+}
+
+.Icons .Icons-Vert .Chemie {
+	width: 55%;
+	padding-left: 25px;
+}
+
+.Beleef2 {
+	display: flex;
+	max-width: 90%;
+	margin: auto;
+	margin-bottom: 75px;
+}
+
+.Beleef2 p {
+	width: 65%;
+	font-size: 17px;
+}
+
+.Buttondiv {
+	width: 23%;
+	margin-top: 15px;
+}
+
+.ButtonBeleef {
+	padding: 20px;
+	background-color: #1a3863;
+	text-decoration: none;
+	color: white;
+}
+
+.ButtonBeleef:hover {
+	background-color: white;
+	color: #1a3863;
+	border: 2px solid #1a3863;
+	transition: 0.5s;
+}
+
+.OnzeVisie {
+	background-color: #bac3d0;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 75px;
+}
+
+.OnzeVisie div {
+	width: 600px;
+}
+
+.OnzeVisie div h1 {
+	font-size: 32px;
+	font-weight: bold;
+	font-family: "Source Serif Pro", serif;
+	text-align: center;
+}
+
+.OnzeVisie div p {
+	font-size: 17px;
+	margin-top: 25px;
+	font-family: "Montserrat", sans-serif;
+	align-items: center;
+	padding-left: 50px;
+}
