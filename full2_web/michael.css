@@ -71,27 +71,13 @@
 .OnzeVisie {
 	background-color: #1a3863;
 	color: #fff;
-	height: 300px;
+	padding: 20px;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	
 }
-.OnzeVisie div {
-	width: 600px;
-	text-align: center;
-}
-.OnzeVisie div h1 {
-	font-size: 30px;
+.OnzeVisie h1 {
+	font-size: 32px;
 	font-weight: bold;
 	font-family: "Source Serif Pro", serif;
 	text-align: center;
-}
-.OnzeVisie div p {
-	font-size: 17px;
-	margin-top: 25px;
-	font-family: "Montserrat", sans-serif;
-	align-items: center;
-	/* padding-left: 50px; */
 }
