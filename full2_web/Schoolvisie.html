@@ -1,60 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="michael.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sint-Jan Berchmanscollege</title>
-</head>
-<body>
-    <div class="wrapper-background">
-        <div class="wrapper">
-            <nav class="nav">
-                <div class="logo"><img src="images/logo_vectorieel_wit.png" /></div>
-                <div>
-                    <h1>Sint-Jan Berchmans</h1>
-                    <p>Een school met een hart voor kinder in het hartje van Brussel</p>
+	<head>
+		<link rel="stylesheet" href="michael.css" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sint-Jan Berchmanscollege</title>
+	</head>
+	<body>
+		<div class="wrapper-background">
+			<div class="wrapper flex-column">
+				<nav class="nav">
+					<div class="logo"><img src="images/logo_vectorieel_wit.png" /></div>
+					<div>
+						<h1>Sint-Jan Berchmans</h1>
+						<p>Een school met een hart voor kinder in het hartje van Brussel</p>
+					</div>
+					<div class="grow"></div>
+					<div>
+						<ul>
+							<li><a href="sintjan.html">Home</a></li>
+							<li><a href="#">Info</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Visie</a></li>
+							<li><a href="#">Projectie</a></li>
+							<li><a href="#">Identiteit</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div>
+                    
                 </div>
-                <div class="grow"></div>
-                <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Info</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Visie</a></li>
-                        <li><a href="#">Projectie</a></li>
-                        <li><a href="#">Identiteit</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="footer">
-                <div>
-                    <img src="images/logo_vectorieel_wit.png" style="max-width: 50px" />
-                </div>
-                <div>
-                    <div class="flex-column">
-                        <a href="#">Sint-Jan Berchmans</a>
-                        <a href="#">Contact</a>
-                    </div>
-                </div>
-                <div class="grow"></div>
-                <div style="margin-left: 20px">
-                    <!-- maps here -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10077.732400961153!2d4.338435624539778!3d50.8416636984448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47bc8e19ad7%3A0xb2b6c43cf182490b!2sSint-Jan%20Berchmanscollege!5e0!3m2!1sen!2sbe!4v1674657166707!5m2!1sen!2sbe"
-                        width="250"
-                        height="250"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </div>
-            </div>
-        <div>
-    <div>
-</body>
+				<div class="footer">
+					<div>
+						<img src="images/logo_vectorieel_wit.png" style="max-width: 50px" />
+					</div>
+					<div>
+						<div class="flex-column">
+							<a href="#">Sint-Jan Berchmans</a>
+							<a href="Contact.html">Contact</a>
+						</div>
+					</div>
+					<div class="grow"></div>
+					<div style="margin-left: 20px">
+						<!-- maps here -->
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10077.732400961153!2d4.338435624539778!3d50.8416636984448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47bc8e19ad7%3A0xb2b6c43cf182490b!2sSint-Jan%20Berchmanscollege!5e0!3m2!1sen!2sbe!4v1674657166707!5m2!1sen!2sbe"
+							width="250"
+							height="250"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		window.onscroll = function () {
+			myFunction();
+		};
+
+		var header = document.getElementById("nav");
+		var navtransition = document.getElementById("navtransition");
+		console.log(navtransition);
+		var sticky = navtransition.offsetTop;
+
+		function myFunction() {
+			console.log("offset:", sticky);
+			if (window.pageYOffset > sticky) {
+				header.classList.add("fixed");
+			} else {
+				header.classList.remove("fixed");
+			}
+		}
+	</script>
 </html>
