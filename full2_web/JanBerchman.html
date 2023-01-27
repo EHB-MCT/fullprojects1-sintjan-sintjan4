@@ -90,22 +90,53 @@
 					</div>
 					<div>
 						<div class="flex-column">
-							<a href="#">Sint-Jan Berchmans</a>
-							<a href="#">Contact</a>
+							<h3>Contacteer Ons!</h3>
+							<p>Sint-Jan Berchmanscollege</p>
+							<p>Ursulinenstraat 4</p>
+							<p>Brussel, België</p>
+							<div>
+								
+							</div>
 						</div>
 					</div>
-					<div class="grow"></div>
+					<div>
+						<div class="flex-column">
+						</div>
+					</div>
+					<div class="grow">
+						<div class="flex-column2">
+							<p>Home</p>
+						</div>
+						<div class="flex-column2">
+							<p>Identiteit</p>
+							<a href="#">Opvoedingsproject</a>
+							<a href="#">Schoolvisie</a>
+							<a href="#">Historiek</a>
+							<a href="JanBerchman.html">Jan Berchman</a>
+							<a href="#">Motto-Libenter</a>
+							<a href="#">Jaarthema</a>
+						</div>
+						<div class="flex-column2">
+							<p>Organisatie</p>
+							<a href="#">Inschrijving 2023-2024</a>
+							<a href="#">Schoolkosten</a>
+							<a href="#">Studierichtingen</a>
+							<a href="#">Privacybeleid</a>
+							<a href="#">Wie is wie?</a>
+							<a href="#">Leefregel</a>
+							<a href="#">Versturen</a>
+						</div>
+						<div class="flex-column2">
+							<p>Contact</p>
+						</div>
+					</div>
+					<button onclick="scroll_to_top()" id="scroll_btn"></button>
 					<div style="margin-left: 20px">
 						<!-- maps here -->
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10077.732400961153!2d4.338435624539778!3d50.8416636984448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47bc8e19ad7%3A0xb2b6c43cf182490b!2sSint-Jan%20Berchmanscollege!5e0!3m2!1sen!2sbe!4v1674657166707!5m2!1sen!2sbe"
-							width="250"
-							height="250"
-							style="border: 0"
-							allowfullscreen=""
-							loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"
-						></iframe>
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10077.732400961153!2d4.338435624539778!3d50.8416636984448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47bc8e19ad7%3A0xb2b6c43cf182490b!2sSint-Jan%20Berchmanscollege!5e0!3m2!1sen!2sbe!4v1674657166707!5m2!1sen!2sbe"
+						width="250" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 			</div>
@@ -128,6 +159,47 @@
 			} else {
 				header.classList.remove("fixed");
 			}
+		}
+	</script>
+	<script>
+		window.onscroll = function () {
+			myFunction();
+		};
+
+		var header = document.getElementById("nav");
+		var navtransition = document.getElementById("navtransition");
+		console.log(navtransition);
+		var sticky = navtransition.offsetTop;
+
+		function myFunction() {
+			console.log("offset:", sticky);
+			if (window.pageYOffset > sticky) {
+				header.classList.add("fixed");
+			} else {
+				header.classList.remove("fixed");
+			}
+		}
+	</script>
+	<script>
+		// Get the button
+		let scroll_btn = document.getElementById("scroll_btn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				scroll_btn.style.display = "block";
+				
+			} else {
+				scroll_btn.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function scroll_to_top() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
 		}
 	</script>
 </html>
