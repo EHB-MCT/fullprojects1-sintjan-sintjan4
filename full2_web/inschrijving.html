@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sint-jan Berchmanscollege</title>
+	<link rel="stylesheet" href="reset.css" />
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="maxime.css" />
+	<link rel="stylesheet" href="michael.css" />
+</head>
+
+<body>
+	<div>
+		<div class="wrapper flex-column">
+			<nav class="nav">
+				<div class="logo"><img src="images/icons/logo_vectorieel_wit.png" /></div>
+				<div class="logoline">
+					<h1>Sint-Jan Berchmanscollege</h1>
+					<p>Een school met een hart voor kinder in het hartje van Brussel</p>
+				</div>
+				<div class="grow"></div>
+				<div class="dropdownn">
+					<ul class="dropdown-content">
+						<li><a href="sintjan.html">Home</a></li>
+						<li>
+							<a href="#">Identiteit</a>
+							<ul class="dropdown">
+								<li><a href="opvoedingsproject.html">Opvoedingsproject</a></li>
+								<li><a href="Schoolvisie.html">Schoolvisie</a></li>
+								<li><a href="historiek.html">Historiek</a></li>
+								<li><a href="JanBerchman.html">Jan Berchmans</a></li>
+								<li><a href="moto-libenter.html">Motto-Libenter</a></li>
+								<li><a href="jaarthema.html">Jaarthema</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#">Organisatie</a>
+							<ul class="dropdown organisatie">
+								<li><a href="inschrijving.html">Inschrijving 2023-2024</a></li>
+								<li><a href="Schoolkosten.html">Schoolkosten</a></li>
+								<li><a href="studierichtingen.html">Studierichtingen</a></li>
+								<li><a href="Privacy.html">Informatieveiligheids-en privacybeleid</a></li>
+								<li><a href="wie-is-wie.html">Wie is Wie?</a></li>
+								<li><a href="regelement.html">Leefregel/ Schoolreglement</a></li>
+								<li><a href="vacatures.html">Vacatures</a></li>
+							</ul>
+						</li>
+						<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<footer>
+				<div>
+					<img src="images/icons/logo_vectorieel_wit.png" style="max-width: 50px" />
+				</div>
+				<div>
+					<div class="flex-column">
+						<h3>Contacteer Ons!</h3>
+						<p>Sint-Jan Berchmanscollege</p>
+						<p>Ursulinenstraat 4</p>
+						<p>Brussel, België</p>
+						<a href="Contact.html"><button>Contact</button></a>
+						<div>
+
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="flex-column">
+					</div>
+				</div>
+				<div class="grow">
+					<div class="flex-column2">
+						<p>Home</p>
+					</div>
+					<div class="flex-column2">
+						<p>Identiteit</p>
+						<a href="#">Opvoedingsproject</a>
+						<a href="#">Schoolvisie</a>
+						<a href="#">Historiek</a>
+						<a href="JanBerchman.html">Jan Berchman</a>
+						<a href="#">Motto-Libenter</a>
+						<a href="#">Jaarthema</a>
+					</div>
+					<div class="flex-column2">
+						<p>Organisatie</p>
+						<a href="#">Inschrijving 2023-2024</a>
+						<a href="#">Schoolkosten</a>
+						<a href="#">Studierichtingen</a>
+						<a href="#">Privacybeleid</a>
+						<a href="#">Wie is wie?</a>
+						<a href="#">Leefregel</a>
+						<a href="#">Versturen</a>
+					</div>
+					<div class="flex-column2">
+						<p>Contact</p>
+					</div>
+				</div>
+				<button onclick="scroll_to_top()" id="scroll_btn"></button>
+				<div style="margin-left: 20px">
+					<!-- maps here -->
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10077.732400961153!2d4.338435624539778!3d50.8416636984448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47bc8e19ad7%3A0xb2b6c43cf182490b!2sSint-Jan%20Berchmanscollege!5e0!3m2!1sen!2sbe!4v1674657166707!5m2!1sen!2sbe"
+						width="250" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script>
+		// Get the button
+		let scroll_btn = document.getElementById("scroll_btn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				scroll_btn.style.display = "block";
+
+			} else {
+				scroll_btn.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function scroll_to_top() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+
+</html>

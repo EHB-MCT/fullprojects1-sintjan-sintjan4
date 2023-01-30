@@ -12,7 +12,7 @@ body{
 
 .container {
     font-family: "Source Serif Pro", serif;
-    background-image: url("./images/background.jpg");
+    background-image: url("./images/backgrounds/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: max-content;
@@ -58,6 +58,22 @@ body{
 .imgwrap img{
     height: 200px;
 }
+.imgwrap{
+    align-items: center;
+}
+svg{
+    fill: white;
+}
+.imgwrap a {
+    font-size: 25px;
+    text-align: flex-end;
+}
+.OnzeVisie{
+    background-color: #1a3863;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
 
 .horie {
     margin-top: 50px;
@@ -83,19 +99,22 @@ body{
 
 .circle {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
 	margin: 10px;
 	color: #fff;
-    border: 3px solid #000;
+    border: 3px solid #00000000;
     border-radius: 250px;
     background-image: url("./images/background.jpg");
 	background-size: cover;
     width: 250px;
     height: 250px;
+
+    transition: 0.3s;
 }
 .circle:hover{
     opacity: 0.6;
+    border: 3px solid #009245;
 }
 .circle a{
     text-decoration: none;
@@ -104,6 +123,8 @@ body{
 .circle p {
 	background-color: #00000090;
 	padding: 5px;
+    
+    
 }
 
 nav {
@@ -134,7 +155,7 @@ nav h1 {
 nav p {
     color: white;
     font-size: 12px;
-    font-family: 
+    /* font-family:  */
 }
 nav img {
     width: 50px;
@@ -190,7 +211,7 @@ h4 {
 }
 
 p {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
     line-height: 1.2;
 }
@@ -212,7 +233,7 @@ p {
     display: inline-block;
 }
 
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     background-color: #1a3863;
@@ -222,7 +243,7 @@ p {
     font-family: "Source Serif Pro", serif;
     color: #fff;
 }
-.footer a {
+footer a {
     color: #fff;
 }
 
@@ -231,9 +252,7 @@ p {
     justify-content: center;
 }
 
-.flex-column h3 {
-    border-bottom: 2px solid white;
-}
+
 
 .flex-column2 {
     padding: 25px;
@@ -246,17 +265,17 @@ p {
     font-size: 20px;
 }
 
-.footer h3 {
+footer h3 {
     color: #fff;
     margin-bottom: 50px;
 }
 
-.footer p {
+footer p {
     color: #fff;
     margin-bottom: 20px;
 }
 
-.footer img {
+footer img {
     margin-right: 30px;
 }
 
@@ -269,14 +288,14 @@ p {
     right: 30px;
     z-index: 99;
     
-    background-image: url(./images/arrow_icon.svg);
+    background-image: url(./images/icons/arrow_icon.svg);
     background-size: cover;
     
     border: none;
     outline: none;
     background-color: #ffffff00;
     cursor: pointer;
-    transition: 1s;
+
 }
 
 
@@ -347,14 +366,20 @@ p {
     align-items: center;
 }
 
-.JanBerchmans img {
+.JanBerchmans div + div img {
     width: 250px;
-    margin: 50px;
+    margin: 50px 0px 50px 50px;
+}
+
+.JanBerchmans > div img{
+    width: 250px;
+    margin: 50px 50px 50px 0px;
 }
 
 .JanBerchmans2 {
-    text-align: center;
-    margin-bottom: 75px;
+}
+.JanBerchmans2 p {
+width: 500px;
 }
 
 /*Dropdown*/
@@ -386,12 +411,20 @@ ul.dropdown li:hover ::after {
     max-width: 300px;
 }
 
+ 
+
 .Contact {
 	padding: 30px 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .Contact div h2 {
 	font-size: 40px;
+}
+
+.Contact-Left {
+    margin-right: 200px;
 }
 
 .Underline2 {
@@ -410,11 +443,6 @@ ul.dropdown li:hover ::after {
     width: 42px;
 }
 
-.Contact {
-	display: flex;
-	justify-content: space-between;
-    
-}
 
 .Contact p {
     margin-top: 10px;
@@ -432,7 +460,7 @@ ul.dropdown li:hover ::after {
 }
 
 .form .txtBox .Name {
-	width: 300px;
+	width: 200px;
 	height: 35px;
 }
 .horiehover a{
@@ -465,6 +493,48 @@ ul.dropdown li:hover ::after {
 .Contact div img {
 	width: 10%;
 }
+
+.Privacy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Privacy div h2 {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.Privacy div iframe {
+    margin-bottom: 50px
+}
+
+.Schoolkosten {
+    background-color: grey;
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.SchoolkostenBackground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Schoolkosten div h1 {
+    margin-top: 50px;
+    margin-top: 50px;
+}
+
+.Schoolkosten div h3 {
+    margin-bottom: 50px;
+}
+
+.Schoolkosten div a {
+    color: white;
+}
+
 .green {
     display: flex;
     align-self: center;
@@ -479,7 +549,7 @@ ul.dropdown li:hover ::after {
     padding-bottom: 20px;
 }
  .hand img {
-  border-bottom: 2px solid lightgreen;
+  border-bottom: 2px solid #009245;
 }
 
 .green div div{
@@ -489,7 +559,7 @@ ul.dropdown li:hover ::after {
 .links{
 	width: 400px;
     height: 500px;
-	border: lightgreen;
+	border: #009245;
 }
 
 .links p{
@@ -512,13 +582,13 @@ ul.dropdown li:hover ::after {
 }
 
 .links div.lln{
-    border: 3px solid lightgreen;
+    border: 3px solid #009245;
     position: relative;
     height: 110%;
 }
 
 .links .fake{
-    border: 3px solid lightgreen;
+    border: 3px solid #009245;
     position: absolute;
     top: -10px;
     left: -10px;
@@ -615,9 +685,11 @@ ul.dropdown li:hover ::after {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
 .logoline{
     line-height: 2px;
 }
+
 .center-vert p{
     text-align: center;
 }
@@ -626,6 +698,21 @@ ul.dropdown li:hover ::after {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
+
 .infoboard{
  width: 400px;
+}
+
+#JanBerchman{
+    width: 80%;
+    margin: auto;
+}
+
+footer div div a button{
+    color: white;
+    background-color: #009245;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px; 
+    font-family: 'Lato', sans-serif;;
 }
