@@ -5,56 +5,66 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="./images/icons/logo_vectorieel_zwart.png">
 	<title>Sint-jan Berchmanscollege</title>
+	<script src="./javascript/tools.js"></script> 
 	<link rel="stylesheet" href="reset.css" />
 	<link rel="stylesheet" href="./style.css" />
-	<link rel="stylesheet" href="maxime.css" />
-	<link rel="stylesheet" href="michael.css" />
+	<!-- <link rel="stylesheet" href="maxime.css" /> -->
+	<!-- <link rel="stylesheet" href="michael.css" /> -->
 </head>
 
 <body>
 	<div class="wrapper-background">
 		<div class="wrapper flex-column">
 			<nav class="nav">
-				<div class="logo"><img src="images/icons/logo_vectorieel_wit.png" /></div>
+				<div class="logo"><img id="logo1" src="images/icons/logo_vectorieel_wit.png"></div>
 				<div class="logoline">
 					<h1>Sint-Jan Berchmanscollege</h1>
 					<p>Een school met een hart voor kinder in het hartje van Brussel</p>
 				</div>
 				<div class="grow"></div>
 				<div class="dropdownn">
-					<ul class="dropdown-content">
+					<ul class="dropdown-content" id="myLinks">
 						<li><a href="sintjan.html">Home</a></li>
 						<li>
 							<a href="#">Identiteit</a>
 							<ul class="dropdown">
 								<li><a href="opvoedingsproject.html">Opvoedingsproject</a></li>
-								<li><a href="Schoolvisie.html">Schoolvisie</a></li>
-								<li><a href="historiek.html">Historiek</a></li>
 								<li><a href="JanBerchman.html">Jan Berchmans</a></li>
 								<li><a href="moto-libenter.html">Motto-Libenter</a></li>
-								<li><a href="jaarthema.html">Jaarthema</a></li>
 							</ul>
 						</li>
-
 						<li>
 							<a href="#">Organisatie</a>
 							<ul class="dropdown organisatie">
 								<li><a href="inschrijving.html">Inschrijving 2023-2024</a></li>
 								<li><a href="Schoolkosten.html">Schoolkosten</a></li>
 								<li><a href="studierichtingen.html">Studierichtingen</a></li>
-								<li><a href="Privacy.html">Informatieveiligheids-en privacybeleid</a></li>
-								<li><a href="wie-is-wie.html">Wie is Wie?</a></li>
-								<li><a href="regelement.html">Leefregel/ Schoolreglement</a></li>
+								<li><a href="Privacy.html">Privacybeleid</a></li>
+								<li><a href="regelement.html">Leefregel</a></li>
 								<li><a href="vacatures.html">Vacatures</a></li>
 							</ul>
 						</li>
 						<li><a href="Contact.html">Contact</a></li>
 					</ul>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					  </a>
 				</div>
+				<script>
+				function myFunction() {
+					var x = document.getElementById("myLinks");
+					if (x.style.display === "block") {
+					  x.style.display = "none";
+					} else {
+					  x.style.display = "block";
+					}
+				  }
+				</script>
 			</nav>
-			<div class="container">
-				<h1>Bekwaam, Bewust en bewogen</h1>
+			<div class="container" id="conta">
+				<h1>Bekwaam, Bewust en Bewogen</h1>
 			</div>
 
 			<div class="OnzeVisie">
@@ -89,19 +99,19 @@
 
 			<div class="flex horie horiehover wrap imgwrap" style="color: #fff;">
 				<div class="grow flex-column center-vert center-hori" style="background-color: #1a3863;">
-					<p><a href="#">Campus</a> </p>
+					<a href="#"><p>Campus</p></a>
 					<img src="./images/icons/school_icon.svg" alt="icoon van campus">
 				</div>
 				<div class="grow flex-column center-vert center-hori" style="background-color: #4a6284;">
-					<p><a href="#">Progamma</a> </p>
+					<a href="#"><p>Progamma</p></a>
 					<img src="images/icons/programma_icon.svg" alt="icoon van programma">
 				</div>
 				<div class="grow flex-column center-vert center-hori" style="background-color: #8898ae;">
-					<p><a href="#">Contact</a> </p>
+					<a href="#"><p>Contact</p></a>
 					<img src="images/icons/contact_icon.svg" alt="icoon van contact">
 				</div>
 				<div class="grow flex-column center-vert center-hori" style="background-color: #bac3d0;">
-					<p><a href="#">Studies</a></p>
+					<a href="#"><p>Studies</p></a>
 					<img src="images/icons/study_icon.svg" alt="icoon van studies">
 				</div>
 			</div>
@@ -182,17 +192,18 @@
 
 			</div>
 
-
-			<div class="infoBoard flex">
-				<div>
-					<p>
-						Ons college draagt de naam van de Jezuïet Jan Berchmans die in 1599 het levenslicht zag in
-						Diest. Zijn Korte leven verloopt in een voor Europa turbulente, maar ook creatieve en expansieve
-						tijd. De kinderjaren spelen zich af tegen een
-						achtergrond vol krijgslawaai.
-					</p>
+			<div class="flex center-hori">
+				<div class="infoBoard flex ">
+					<div>
+						<p id="sint-jan-text">
+							Ons college draagt de naam van de Jezuïet Jan Berchmans die in 1599 het levenslicht zag in
+							Diest. Zijn Korte leven verloopt in een voor Europa turbulente, maar ook creatieve en expansieve
+							tijd. De kinderjaren spelen zich af tegen een
+							achtergrond vol krijgslawaai.
+						</p>
+					</div>
+					<img id="sint-jan" src="images/sint-jan.png" style="margin-left: 10px" />
 				</div>
-				<img src="images/sint-jan.png" style="margin-left: 10px" />
 			</div>
 
 			<a href="#header"></a>
@@ -223,22 +234,18 @@
 					</div>
 					<div class="flex-column2">
 						<p>Identiteit</p>
-						<a href="#">Opvoedingsproject</a>
-						<a href="#">Schoolvisie</a>
-						<a href="#">Historiek</a>
+						<a href="opvoedingsproject.html">Opvoedingsproject</a>
 						<a href="JanBerchman.html">Jan Berchman</a>
-						<a href="#">Motto-Libenter</a>
-						<a href="#">Jaarthema</a>
+						<a href="moto-libenter.html">Motto-Libenter</a>
 					</div>
 					<div class="flex-column2">
 						<p>Organisatie</p>
-						<a href="#">Inschrijving 2023-2024</a>
-						<a href="#">Schoolkosten</a>
-						<a href="#">Studierichtingen</a>
-						<a href="#">Privacybeleid</a>
-						<a href="#">Wie is wie?</a>
-						<a href="#">Leefregel</a>
-						<a href="#">Versturen</a>
+						<a href="inschrijving.html">Inschrijving 2023-2024</a>
+						<a href="Schoolkosten.html">Schoolkosten</a>
+						<a href="studierichtingen.html">Studierichtingen</a>
+						<a href="Privacy.html">Privacybeleid</a>
+						<a href="regelement.html">Leefregel</a>
+						<a href="vacatures.html">Vacatures</a>
 					</div>
 					<div class="flex-column2">
 						<p>Contact</p>
