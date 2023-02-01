@@ -1,0 +1,71 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #1a3863;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Source Serif Pro", serif;
+    color: #fff;
+}
+
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    /* margin-bottom: 30px; */
+}
+footer div div {
+    margin-bottom: 0px;
+}
+
+footer h3 {
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    margin-bottom: 5px;
+}
+footer p {
+	color: #fff;
+	margin-bottom: 10px;
+}
+footer img {
+	margin-right: 30px;
+}
+
+footer button {
+	color: white;
+	background-color: #009245;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 10px 20px;
+	font-family: "Lato", sans-serif;
+}
+
+footer .maps {
+    margin-left: 20px
+}
+
+@media (max-width: 780px) {
+	footer {
+        background-color: #1a3863;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-family: "Source Serif Pro", serif;
+        color: #fff;
+    }
+    footer .maps {
+        margin-left: 0px
+    }
+    
+}
