@@ -458,7 +458,7 @@ ul.dropdown li:hover ::after {
 	background-color: grey;
 	color: white;
 	margin-top: 75px;
-	margin-bottom: 249px;
+	margin-bottom: 100px;
 }
 
 .SchoolkostenBackground {
@@ -910,6 +910,31 @@ ul.dropdown li:hover ::after {
 
 .active{
 	color: #b2b2b2;
+}
+
+#inschrijving{
+	width: 60%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+#inschrijving div.form p{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+#inschrijving p + label{
+	border: solid 3px #1a3863;
+	background-color: white;
+	padding: 50px 20px;
+	color: #1a3863;
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: bolder;
+}
+
+#inschrijving input[type="file"]{
+	display: none;
 }
 
 @media only screen and(max-width: 1000px) {
