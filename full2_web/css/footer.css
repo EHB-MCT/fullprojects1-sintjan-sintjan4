@@ -1,6 +1,7 @@
 footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #1a3863;
     padding: 30px;
     padding-left: 50px;
@@ -11,6 +12,7 @@ footer {
 
 
 footer div {
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     padding: 0px;
@@ -51,7 +53,11 @@ footer .maps {
     margin-left: 20px
 }
 
-@media (max-width: 780px) {
+.respo {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 970px) {
 	footer {
         background-color: #1a3863;
         display: flex;
@@ -63,6 +69,10 @@ footer .maps {
         padding-right: 50px;
         font-family: "Source Serif Pro", serif;
         color: #fff;
+    }
+    .respo {
+        display: flex;
+        flex-direction: column;
     }
     footer .maps {
         margin-left: 0px
