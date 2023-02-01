@@ -47,7 +47,7 @@
 									<li><a href="vacatures.html">Vacatures</a></li>
 								</ul>
 							</li>
-							<li><a href="Contact.html">Contact</a></li>
+							<li><a href="Contact.html" class="active">Contact</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -69,7 +69,7 @@
                         <p>adedecker@sint-jan-brussel.be</p>
                         <p>nharding@sint-jan-brussel.be</p>
                     </div>
-                    <div class="form">
+                    <div class="form" data-aos="fade-left">
                         <p>Name *</p>
                         <div class="txtBox">
                             <div>
@@ -210,4 +210,10 @@
 			document.documentElement.scrollTop = 0;
 		}
 	</script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 800,
+			});
+		</script>
 </html>

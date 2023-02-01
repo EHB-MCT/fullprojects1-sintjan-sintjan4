@@ -39,12 +39,12 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">Organisatie</a>
+								<a href="#" class="active">Organisatie</a>
 								<ul class="dropdown organisatie">
 									<li><a href="studierichtingen.html">Studierichtingen</a></li>
 									<li><a href="Privacy.html">Privacybeleid</a></li>
 									<li><a href="regelement.html">Leefregel</a></li>
-									<li><a href="vacatures.html">Vacatures</a></li>
+									<li><a href="vacatures.html" class="active">Vacatures</a></li>
 								</ul>
 							</li>
 							<li><a href="Contact.html">Contact</a></li>
@@ -52,7 +52,7 @@
 					</div>
 				</nav>
 				<div class="Vacatures">
-					<div class="Tile">
+					<div class="Tile" data-aos="fade-right">
 						<h4>Wie zoeken wij?</h4>
 						<p>Gepassioneerde leerkrachten</p>
 						<p>Kan werken vanuit leerlijnen de kinderen</p>
@@ -157,6 +157,12 @@
 				document.body.scrollTop = 0;
 				document.documentElement.scrollTop = 0;
 			}
+		</script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 800,
+			});
 		</script>
 	</body>
 </html>
