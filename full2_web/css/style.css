@@ -909,35 +909,34 @@ ul.dropdown li:hover ::after {
 	display: inline;
 }
 
-.active{
+.active {
 	color: #b2b2b2;
 }
 
-#inschrijving{
+#inschrijving {
 	width: 60%;
 	margin: auto;
 	margin-bottom: 100px;
 }
 
-#inschrijving div.form p{
+#inschrijving div.form p {
 	margin-top: 20px;
 	margin-bottom: 5px;
 }
 
-label[for="foto"] +  div{
+label[for="foto"] + div {
 	width: 400px;
 }
 
-.file-upload-wrapper{
+.file-upload-wrapper {
 	position: relative;
 	width: 100%;
 	height: 60px;
 	cursor: pointer;
 }
 
-
-.file-upload-wrapper::after{
-	content:attr(data-text);
+.file-upload-wrapper::after {
+	content: attr(data-text);
 	font-size: 18px;
 	position: absolute;
 	top: 0;
@@ -1121,6 +1120,10 @@ label[for="foto"] +  div{
 	.Tile {
 		margin: 0;
 		padding: 7px;
+	}
+
+	/*studierichting*/
+	.FlexBoxes {
 	}
 }
 @media (max-width: 1100px) {
