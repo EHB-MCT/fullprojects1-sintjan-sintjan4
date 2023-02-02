@@ -850,10 +850,11 @@ ul.dropdown li:hover ::after {
 }
 
 .FirstYear {
-	background-color: lightgray;
+	background-color: whitesmoke;
 	height: 50px;
 	text-align: center;
 	border: 0.5px solid black;
+	box-shadow: 5px 5px #1a3863be;
 }
 
 .FirstYear h4 {
@@ -867,12 +868,13 @@ ul.dropdown li:hover ::after {
 }
 
 .FlexBoxes div {
-	background-color: lightgray;
-	width: 250px;
+	background-color: #f6f6f6;
+	width: 230px;
 	text-align: center;
 	height: 100px;
 	border: 0.5px solid black;
 	transition: height 0.5s;
+	box-shadow: 5px 5px #1a3863be;
 }
 
 .FlexBoxes h4 {
@@ -1124,6 +1126,13 @@ label[for="foto"] + div {
 
 	/*studierichting*/
 	.FlexBoxes {
+		flex-direction: column;
+	}
+	.inschrijving {
+		flex-direction: column;
+	}
+	.txtBox {
+		flex-wrap: wrap;
 	}
 }
 @media (max-width: 1100px) {
@@ -1140,5 +1149,41 @@ label[for="foto"] + div {
 	}
 	.VacButton {
 		padding: 8px;
+	}
+
+	.FlexBoxes {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 740px) {
+	.motto {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.motto {
+		font-size: 10px;
+		text-align: center;
+		float: left;
+		max-width: fit-content;
+	}
+
+	.logoimg img {
+		max-width: 300px;
+	}
+
+	.mottotext {
+		width: 315px;
+	}
+}
+@media (max-width: 842px) {
+	.Contact {
+		flex-direction: column;
+	}
+	.Contact-Left {
+		padding-bottom: 20px;
+	}
+	.respo {
+		display: none;
 	}
 }
