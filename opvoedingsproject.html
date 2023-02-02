@@ -17,7 +17,6 @@
 		/>
 		<link rel="icon" type="image/x-icon" href="./images/icons/logo_vectorieel_zwart.png" />
 		<title>Sint-jan Berchmanscollege</title>
-		<script src="./javascript/tools.js"></script>
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
@@ -40,9 +39,9 @@
 							<li>
 								<a href="#" class="active">Identiteit</a>
 								<ul class="dropdown">
-									<li><a href="opvoedingsproject.html">Opvoedingsproject</a></li>
+									<li><a href="opvoedingsproject.html" class="active">Opvoedingsproject</a></li>
 									<li><a href="JanBerchman.html">Jan Berchmans</a></li>
-									<li><a href="moto-libenter.html" class="active">Motto-Libenter</a></li>
+									<li><a href="moto-libenter.html">Motto-Libenter</a></li>
 								</ul>
 							</li>
 							<li>
@@ -57,19 +56,32 @@
 						</ul>
 					</div>
 				</nav>
-
-				<div class="motto">
-					<div class="mottotext">
-						<h1>Motto-Libenter</h1>
+				<!-- <div class="project"> -->
+				<div class="flex-column center-vert">
+					<div class="margin flex-column center-vert">
+						<h1>Opvoedingsproject</h1>
+						<h2>Opvoedingsproject in een notendop</h2>
 						<p>
-							Het motto van ons college is “libenter !” of “graag”. Wanneer iemand je iets vraagt, is het altijd fijner als iemand je echt van harte, met plezier wil helpen (libenter!) Hierdoor zal de solidariteit en verbondenheid met je medemens
-							toenemen, omdat je elkaar helpt vanuit een zekere onbaatzuchtigheid
+							Het opvoedingsproject van de Vlaamse jezuïetencolleges vertrekt van 10 werkwoorden of ‘bewegingen’. Zij drukken engagement en dynamiek uit en bieden een leidraad voor het pedagogisch handelen in de jezuïetencolleges. Deze bewegingen
+							zijn geworteld in het christelijk humanisme en in het charisma van Ignatius van Loyola (1491-1556) en vormen een aanzet om ook ons jezuïetencollege in het centrum van Brussel kleur te geven in de wereld van vandaag.
 						</p>
-						<br />
-						<br />
-						<p>Als leerlingen deze basishouding aannemen, zijn ze dan niet al op weg om het verschil te maken in onze samenleving en “mensen van de verandering” te zijn?</p>
+						<img class="imgproject" style="max-width: 600px" src="images/Pedagogie.png" />
+						<h1 id="titel2">IGNATIAANSE PEDAGOGIE IN 10 BEWEGINGEN</h1>
+						<div class="rules">
+							<ul>
+								<li data-aos="fade-down">Vertrouwen geven. Inzetten op vrijheid en verantwoordelijkheid</li>
+								<li data-aos="fade-down">Zorg dragen voor leerlingen. ‘Cura personalis’</li>
+								<li data-aos="fade-down">Uitdagen tot meer. ‘Magis’</li>
+								<li data-aos="fade-down">Smaak geven. ‘Non multa sed multum’</li>
+								<li data-aos="fade-down">Reflecteren en kritisch kiezen. Onderscheiden</li>
+								<li data-aos="fade-down">De hele mens vormen. Bekwaam, bewust, bewogen</li>
+								<li data-aos="fade-down">Samen werken, samen leven. Eenheid in verscheidenheid</li>
+								<li data-aos="fade-down">Perspectieven openen. God zoeken in alle dinge</li>
+								<li data-aos="fade-down">Zorg dragen voor de wereld. ‘En todo amar y servir’</li>
+								<li data-aos="fade-down">Handelen in dankbaarheid. Terugblik</li>
+							</ul>
+						</div>
 					</div>
-					<div data-aos="fade-left" class="logoimg" style="max-width: 500px"><img src="images/icons/logo_vectorieel_zwart.png" /></div>
 				</div>
 
 				<footer class="grow">
@@ -142,7 +154,7 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init({
-				duration: 800,
+				duration: 1000,
 			});
 		</script>
 	</body>
