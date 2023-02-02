@@ -518,14 +518,14 @@ ul.dropdown li:hover ::after {
 	padding: 40px;
 }
 
-.links a {
-	/* font-family: ; */
+/*.links a {
+	 font-family: ;
 	text-decoration: none;
 	color: #fff;
 	background-color: #009245;
 	padding: 8px;
 	margin-left: 15px;
-}
+}*/
 
 .links div.lln {
 	border: 3px solid #009245;
@@ -806,6 +806,7 @@ ul.dropdown li:hover ::after {
 .Tile h4 {
 	margin-bottom: 8px;
 	margin-top: 15px;
+	font-family: "Source Serif Pro", serif;
 }
 
 .VacButton {
@@ -817,7 +818,7 @@ ul.dropdown li:hover ::after {
 }
 
 .ButtonDiv {
-	margin-top: 75px;
+	margin-top: 40px;
 }
 
 .VacButton:hover {
@@ -923,18 +924,37 @@ ul.dropdown li:hover ::after {
 	margin-bottom: 5px;
 }
 
-#inschrijving p + label{
-	border: solid 3px #1a3863;
-	background-color: white;
-	padding: 50px 20px;
-	color: #1a3863;
-	text-align: center;
-	font-family: Montserrat;
-	font-weight: bolder;
+label[for="foto"] +  div{
+	width: 400px;
 }
 
-#inschrijving input[type="file"]{
-	display: none;
+.file-upload-wrapper{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	cursor: pointer;
+}
+
+
+.file-upload-wrapper::after{
+	content:attr(data-text);
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	border: #1a3863 solid 3px;
+	padding: 10px 15px;
+	display: block;
+	width: calc(100% - 40px);
+	pointer-events: none;
+	z-index: 20;
+	height: 40px;
+	line-height: 40px;
+	color: #999;
+	border-radius: 5px 10px 10px 5px;
+	font-weight: 300;
+	font-family: Montserrat;
 }
 
 @media only screen and(max-width: 1000px) {
