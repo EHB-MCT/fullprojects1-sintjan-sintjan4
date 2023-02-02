@@ -997,7 +997,7 @@ label[for="foto"] + div {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
 	.logoline {
 		font-size: 3vw;
 	}
@@ -1017,7 +1017,7 @@ label[for="foto"] + div {
 	section#directie article:nth-child(1) {
 		border: none;
 	}
-
+	
 	#directie section div {
 		grid-template-columns: 1fr;
 		margin-bottom: 200px;
