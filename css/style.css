@@ -978,9 +978,11 @@ label[for="foto"] + div {
 	section#directie article:nth-child(1) {
 		border: none;
 	}
-	/* .circlewrap {
+
+	.circlewrap {
 		width: 600px;
-	} */
+		display: none;
+	}
 
 	#JanBerchman .geschiedenis-article:nth-child(4) {
 		width: 60%;
